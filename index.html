@@ -3,6 +3,10 @@
 <head>
     <title>Maxima school</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
 </head>
@@ -16,6 +20,10 @@
             <li><a href="#">Контакты</a></li>
         </ul>
     </div>
+
+    <form class="form">
+        <input type="submit" value="Форма создания пользователя">
+    </form>
 
     <div class="news-container">
         <div class="news-item">
@@ -62,21 +70,21 @@
     </div>
 
     <div class="feedback">
-        <form class="feedback-form">
+        <form class="feedback-form form">
             <div class="form__row">
                 <label class="form__block">
-                    <div class="form__title">Имя</div>
-                    <input type="text" class="form__input" placeholder="введите имя" required>
+                    <div class="form__title"><h2>Имя</h2></div>
+                    <input type="text" class="form input" placeholder="введите имя" required>
                 </label>
                 <label class="form__block">
-                    <div class="form__title">Почта</div>
-                    <input type="email" class="form__input" placeholder="введите почту" required> 
+                    <div class="form__title"><h2>Почта</h2></div>
+                    <input type="email" class="form input" placeholder="введите почту" required> 
                 </label> 
             </div>
             <div class="form__row">
                 <label class="form__bloack">
-                    <div class="form__title">Сообщение</div>
-                    <textarea class="form__input form__input--textarea"></textarea>
+                    <div class="form__title"><h2>Сообщение</h2></div>
+                    <textarea class="form input textarea"></textarea>
                 </label>               
             </div>
             <div class="form__row">
@@ -84,6 +92,44 @@
                 <input type="reset" value="Сбросить">
             </div>
         </form>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <form class="modal__form feedback-form">
+                <div class="form__row">
+                    <label class="form__block">
+                        <div class="form__title"><h2>ФИО</h2></div>
+                        <input type="text" class="form__input" placeholder="введите ФИО" required>
+                    </label>
+                    <label class="form__block">
+                        <div class="form__title"><h2>Телефон</h2></div>
+                        <input type="number" class="form__input" placeholder="введите телефон" required> 
+                    </label> 
+                    <label class="form__block">
+                        <div class="form__title"><h2>Email</h2></div>
+                        <input type="email" class="form__input" placeholder="введите Email" required>
+                    </label>
+                    <label class="form__block">
+                        <div class="form__title"><h2>Логин</h2></div>
+                        <input type="text" class="form__input" placeholder="введите Логин" required>
+                    </label>
+                    <label class="form__block">
+                        <div class="form__title"><h2>Пароль</h2></div>
+                        <input type="password" class="form__input" placeholder="введите Пароль" required>
+                    </label>
+                    <label class="form__block">
+                        <div class="form__title"><h2>Группа пользователя</h2></div>
+                        <input type="text" class="form__input" placeholder="введите Группу" required>
+                    </label>
+                    <div class="form__row">
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Сбросить">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <footer class="footer">
@@ -92,6 +138,8 @@
 </div>
 <script src="jquery-3.7.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>

@@ -207,7 +207,6 @@ body {
 
 .form__row {
     flex: 1;
-    margin-right: 20px;
     margin-bottom: 20px;
     width: 100%;
 
@@ -219,4 +218,28 @@ body {
 
 .form__input {
     width: 100%;
+}
+
+.form input[type="submit"] {
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover,
+.form input[type="submit"]:focus,
+.form input[type="submit"]:active {
+    background-color: #333333;
+}
+
+.modal {
+    display: none;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
