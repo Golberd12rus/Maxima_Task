@@ -195,3 +195,28 @@ body {
 .feedback-form input[type="submit"]:active {
     background-color: #333333;
 }
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    margin-bottom: 10px;
+}
+
+.form__row {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    
+}
+
+.form__input {
+    width: 100%;
+}
